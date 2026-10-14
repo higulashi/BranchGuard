@@ -1,0 +1,47 @@
+{
+  "scenarios": [
+    "fork_left",
+    "fork_right",
+    "three_way",
+    "crossing"
+  ],
+  "conditions": [
+    "clean",
+    "clutter",
+    "gaps",
+    "flicker",
+    "mixed"
+  ],
+  "seeds": [
+    11,
+    12,
+    13,
+    14
+  ],
+  "methods": [
+    "nearest",
+    "greedy_route",
+    "spatial",
+    "temporal",
+    "branchguard",
+    "no_motion",
+    "spatial_slow"
+  ],
+  "dt": 0.04,
+  "jobs": 560,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": {
+    "branchguard/__init__.py": "54f62b0d5f512b4ae9a576bf1830fb541f5a1f956712dc762d589e414b42dd15",
+    "branchguard/native.py": "4b27c6837d93326067e2f5b5a9462d7b45501794454fd05f34bbb99a8b5a4f5c",
+    "branchguard/simulator.py": "da6eb4ec5dc832693e1b920b2bc265226e971e8b75d1f6db46c796b56947bad4",
+    "core/branchguard.c": "d3a092f00d32155c7dee2e0d567679623ab06fb99c68baa8628d69645fd0f842",
+    "core/branchguard.h": "96456c665b0fbfc0cc450bcd54c4387a9381aeb23a619672a642a6fa1d08fb3e",
+    "make_demo.py": "79fa2546c931366bb6e2dc9657b2d6658ff4c7926cee84ba1c9239115f9a9875",
+    "run_benchmark.py": "a33febaf3dcc6cfbe2c6904bd12b7a2e73cbf79bb438314701140c781a273931",
+    "tests/test_core.py": "29b3b15dded7e593e51112445151ff5deff6ab99c1f935b82de37f3bad7ca02f"
+  },
+  "sensor_input": "188x120 uint8 image, route -1/0/+1, noisy encoder distance and gyro yaw increment",
+  "success": "reach world x >= 4.4 m on requested route; stops are failures",
+  "note": "All conditions and failures retained. This is a synthetic black-guide-line testbed."
+}
