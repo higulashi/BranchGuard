@@ -1,0 +1,518 @@
+{
+  "methods": {
+    "nearest": {
+      "total": 120,
+      "statuses": {
+        "off_track": 44,
+        "complete": 76
+      },
+      "success_rate": 0.6333333333333333
+    },
+    "greedy_route": {
+      "total": 120,
+      "statuses": {
+        "off_track": 42,
+        "complete": 78
+      },
+      "success_rate": 0.65
+    },
+    "spatial": {
+      "total": 120,
+      "statuses": {
+        "complete": 112,
+        "off_track": 8
+      },
+      "success_rate": 0.9333333333333333
+    },
+    "temporal": {
+      "total": 120,
+      "statuses": {
+        "complete": 108,
+        "off_track": 12
+      },
+      "success_rate": 0.9
+    },
+    "branchguard": {
+      "total": 120,
+      "statuses": {
+        "complete": 113,
+        "off_track": 7
+      },
+      "success_rate": 0.9416666666666667
+    },
+    "no_motion": {
+      "total": 120,
+      "statuses": {
+        "complete": 109,
+        "off_track": 11
+      },
+      "success_rate": 0.9083333333333333
+    },
+    "no_prefix": {
+      "total": 120,
+      "statuses": {
+        "complete": 110,
+        "off_track": 10
+      },
+      "success_rate": 0.9166666666666666
+    },
+    "spatial_slow": {
+      "total": 120,
+      "statuses": {
+        "complete": 115,
+        "off_track": 4,
+        "stopped": 1
+      },
+      "success_rate": 0.9583333333333334
+    },
+    "branchguard_slow": {
+      "total": 120,
+      "statuses": {
+        "complete": 114,
+        "off_track": 6
+      },
+      "success_rate": 0.95
+    }
+  },
+  "paired_comparisons": {
+    "branchguard vs spatial": {
+      "pairs": 120,
+      "a_only": 2,
+      "b_only": 1,
+      "both_complete": 111,
+      "median_time_a": 4.88,
+      "median_time_b": 4.96,
+      "median_time_delta": -0.03999999999999915,
+      "median_rms_a": 0.010988202067187796,
+      "median_rms_b": 0.011543455357633974,
+      "median_rms_delta": 0.0,
+      "median_tv_delta": -0.6560130147845484
+    },
+    "branchguard vs temporal": {
+      "pairs": 120,
+      "a_only": 6,
+      "b_only": 1,
+      "both_complete": 107,
+      "median_time_a": 4.88,
+      "median_time_b": 4.92,
+      "median_time_delta": 0.0,
+      "median_rms_a": 0.010988202067187796,
+      "median_rms_b": 0.011350199867345862,
+      "median_rms_delta": 0.0,
+      "median_tv_delta": 0.0
+    },
+    "branchguard vs no_motion": {
+      "pairs": 120,
+      "a_only": 6,
+      "b_only": 2,
+      "both_complete": 107,
+      "median_time_a": 4.88,
+      "median_time_b": 4.88,
+      "median_time_delta": 0.0,
+      "median_rms_a": 0.010988202067187796,
+      "median_rms_b": 0.010973551725761704,
+      "median_rms_delta": 0.0,
+      "median_tv_delta": 0.0
+    },
+    "branchguard vs no_prefix": {
+      "pairs": 120,
+      "a_only": 3,
+      "b_only": 0,
+      "both_complete": 110,
+      "median_time_a": 4.88,
+      "median_time_b": 4.88,
+      "median_time_delta": 0.0,
+      "median_rms_a": 0.010957886632371301,
+      "median_rms_b": 0.010957886632371301,
+      "median_rms_delta": 0.0,
+      "median_tv_delta": 0.0
+    },
+    "branchguard vs spatial_slow": {
+      "pairs": 120,
+      "a_only": 1,
+      "b_only": 3,
+      "both_complete": 112,
+      "median_time_a": 4.9,
+      "median_time_b": 7.8,
+      "median_time_delta": -2.880000000000001,
+      "median_rms_a": 0.010966981083660746,
+      "median_rms_b": 0.011194363100249703,
+      "median_rms_delta": -0.000373402959593855,
+      "median_tv_delta": -0.9075221125967801
+    },
+    "branchguard_slow vs spatial_slow": {
+      "pairs": 120,
+      "a_only": 3,
+      "b_only": 4,
+      "both_complete": 111,
+      "median_time_a": 7.8,
+      "median_time_b": 7.8,
+      "median_time_delta": 0.0,
+      "median_rms_a": 0.010819099742633047,
+      "median_rms_b": 0.011185985364570428,
+      "median_rms_delta": -3.247488766842683e-05,
+      "median_tv_delta": -0.89209293294698
+    }
+  },
+  "by_condition": {
+    "clean": {
+      "nearest": {
+        "total": 24,
+        "statuses": {
+          "off_track": 6,
+          "complete": 18
+        },
+        "success_rate": 0.75
+      },
+      "greedy_route": {
+        "total": 24,
+        "statuses": {
+          "off_track": 6,
+          "complete": 18
+        },
+        "success_rate": 0.75
+      },
+      "spatial": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "temporal": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_motion": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_prefix": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "spatial_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      }
+    },
+    "clutter": {
+      "nearest": {
+        "total": 24,
+        "statuses": {
+          "off_track": 8,
+          "complete": 16
+        },
+        "success_rate": 0.6666666666666666
+      },
+      "greedy_route": {
+        "total": 24,
+        "statuses": {
+          "off_track": 8,
+          "complete": 16
+        },
+        "success_rate": 0.6666666666666666
+      },
+      "spatial": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "temporal": {
+        "total": 24,
+        "statuses": {
+          "complete": 23,
+          "off_track": 1
+        },
+        "success_rate": 0.9583333333333334
+      },
+      "branchguard": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_motion": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_prefix": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "spatial_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      }
+    },
+    "gaps": {
+      "nearest": {
+        "total": 24,
+        "statuses": {
+          "off_track": 6,
+          "complete": 18
+        },
+        "success_rate": 0.75
+      },
+      "greedy_route": {
+        "total": 24,
+        "statuses": {
+          "complete": 21,
+          "off_track": 3
+        },
+        "success_rate": 0.875
+      },
+      "spatial": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "temporal": {
+        "total": 24,
+        "statuses": {
+          "complete": 23,
+          "off_track": 1
+        },
+        "success_rate": 0.9583333333333334
+      },
+      "branchguard": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_motion": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_prefix": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "spatial_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 23,
+          "stopped": 1
+        },
+        "success_rate": 0.9583333333333334
+      },
+      "branchguard_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      }
+    },
+    "flicker": {
+      "nearest": {
+        "total": 24,
+        "statuses": {
+          "complete": 18,
+          "off_track": 6
+        },
+        "success_rate": 0.75
+      },
+      "greedy_route": {
+        "total": 24,
+        "statuses": {
+          "complete": 17,
+          "off_track": 7
+        },
+        "success_rate": 0.7083333333333334
+      },
+      "spatial": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "temporal": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_motion": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_prefix": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "spatial_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      }
+    },
+    "mixed": {
+      "nearest": {
+        "total": 24,
+        "statuses": {
+          "complete": 6,
+          "off_track": 18
+        },
+        "success_rate": 0.25
+      },
+      "greedy_route": {
+        "total": 24,
+        "statuses": {
+          "complete": 6,
+          "off_track": 18
+        },
+        "success_rate": 0.25
+      },
+      "spatial": {
+        "total": 24,
+        "statuses": {
+          "complete": 16,
+          "off_track": 8
+        },
+        "success_rate": 0.6666666666666666
+      },
+      "temporal": {
+        "total": 24,
+        "statuses": {
+          "complete": 14,
+          "off_track": 10
+        },
+        "success_rate": 0.5833333333333334
+      },
+      "branchguard": {
+        "total": 24,
+        "statuses": {
+          "complete": 17,
+          "off_track": 7
+        },
+        "success_rate": 0.7083333333333334
+      },
+      "no_motion": {
+        "total": 24,
+        "statuses": {
+          "complete": 13,
+          "off_track": 11
+        },
+        "success_rate": 0.5416666666666666
+      },
+      "no_prefix": {
+        "total": 24,
+        "statuses": {
+          "complete": 14,
+          "off_track": 10
+        },
+        "success_rate": 0.5833333333333334
+      },
+      "spatial_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 20,
+          "off_track": 4
+        },
+        "success_rate": 0.8333333333333334
+      },
+      "branchguard_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 18,
+          "off_track": 6
+        },
+        "success_rate": 0.75
+      }
+    }
+  },
+  "flicker_pair": {
+    "pairs": 24,
+    "a_only": 0,
+    "b_only": 0,
+    "both_complete": 24,
+    "median_time_a": 4.859999999999999,
+    "median_time_b": 4.9,
+    "median_time_delta": -0.040000000000000036,
+    "median_rms_a": 0.010161939911208253,
+    "median_rms_b": 0.012674535745271793,
+    "median_rms_delta": -0.00225314386856593,
+    "median_tv_delta": -1.988027125771623
+  },
+  "runs_sha256": "53597faf695bf8e5e7858050707f1a95d8c4940d2c1728a465926b36e58ccb12"
+}
