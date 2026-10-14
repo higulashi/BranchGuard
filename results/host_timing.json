@@ -1,0 +1,13 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "samples": 3000,
+  "median_us": 15.9,
+  "p95_us": 20.0,
+  "state_bytes": 136,
+  "observation_bytes": 624,
+  "output_bytes": 564,
+  "beam_arrays_bytes": 2880,
+  "scope": "Windows host, Python validation/ctypes + C image extraction and decision; one fixed fork frame",
+  "not_measured": "RT1064 runtime, total compiler stack usage, real-time worst case"
+}
