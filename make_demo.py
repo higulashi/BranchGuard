@@ -76,7 +76,12 @@ def create(scenario,condition,seed,method,prefix,gif_only=False):
         panels[0].save(output/(prefix+'.png'))
     # A small palette keeps the demonstration practical for repository previews.
     # Numeric logs and the frames passed to C remain at full precision.
-    panels=[panel.resize((735,405)).quantize(colors=32,dither=Image.Dither.NONE) for panel in panels]
+    palette=Image.new('P',(1,1))
+    rgb=[(16,25,35),(28,28,28),(170,170,170),(210,210,210),(220,220,220),
+         (245,247,249),(157,174,190),(97,116,135),(33,199,217),(235,65,107),
+         (240,180,84),(86,191,165),(208,218,226),(212,129,245),(124,204,118),(239,136,150)]
+    palette.putpalette([channel for color in rgb for channel in color]+[0]*(768-3*len(rgb)))
+    panels=[panel.resize((735,405)).quantize(palette=palette,dither=Image.Dither.NONE) for panel in panels]
     panels[0].save(output/(prefix+'.gif'),save_all=True,append_images=panels[1:]+[panels[-1]]*10,
                    duration=120,loop=0,optimize=True)
     if not gif_only:
