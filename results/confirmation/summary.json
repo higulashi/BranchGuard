@@ -1,0 +1,515 @@
+{
+  "methods": {
+    "nearest": {
+      "total": 120,
+      "statuses": {
+        "off_track": 46,
+        "complete": 74
+      },
+      "success_rate": 0.6166666666666667
+    },
+    "greedy_route": {
+      "total": 120,
+      "statuses": {
+        "complete": 77,
+        "off_track": 43
+      },
+      "success_rate": 0.6416666666666667
+    },
+    "spatial": {
+      "total": 120,
+      "statuses": {
+        "complete": 112,
+        "off_track": 8
+      },
+      "success_rate": 0.9333333333333333
+    },
+    "temporal": {
+      "total": 120,
+      "statuses": {
+        "complete": 106,
+        "off_track": 14
+      },
+      "success_rate": 0.8833333333333333
+    },
+    "branchguard": {
+      "total": 120,
+      "statuses": {
+        "complete": 112,
+        "off_track": 8
+      },
+      "success_rate": 0.9333333333333333
+    },
+    "no_motion": {
+      "total": 120,
+      "statuses": {
+        "complete": 109,
+        "off_track": 11
+      },
+      "success_rate": 0.9083333333333333
+    },
+    "no_prefix": {
+      "total": 120,
+      "statuses": {
+        "complete": 111,
+        "off_track": 9
+      },
+      "success_rate": 0.925
+    },
+    "spatial_slow": {
+      "total": 120,
+      "statuses": {
+        "complete": 115,
+        "off_track": 5
+      },
+      "success_rate": 0.9583333333333334
+    },
+    "branchguard_slow": {
+      "total": 120,
+      "statuses": {
+        "complete": 115,
+        "off_track": 5
+      },
+      "success_rate": 0.9583333333333334
+    }
+  },
+  "paired_comparisons": {
+    "branchguard vs spatial": {
+      "pairs": 120,
+      "a_only": 6,
+      "b_only": 6,
+      "both_complete": 106,
+      "median_time_a": 4.84,
+      "median_time_b": 4.92,
+      "median_time_delta": 0.0,
+      "median_rms_a": 0.00600587797816863,
+      "median_rms_b": 0.00806713998039192,
+      "median_rms_delta": -5.026795410518602e-05,
+      "median_tv_delta": -0.4496046149288304
+    },
+    "branchguard vs temporal": {
+      "pairs": 120,
+      "a_only": 10,
+      "b_only": 4,
+      "both_complete": 102,
+      "median_time_a": 4.84,
+      "median_time_b": 4.84,
+      "median_time_delta": 0.0,
+      "median_rms_a": 0.00600587797816863,
+      "median_rms_b": 0.007421581752853481,
+      "median_rms_delta": 0.0,
+      "median_tv_delta": 0.0
+    },
+    "branchguard vs no_motion": {
+      "pairs": 120,
+      "a_only": 4,
+      "b_only": 1,
+      "both_complete": 108,
+      "median_time_a": 4.84,
+      "median_time_b": 4.84,
+      "median_time_delta": 0.0,
+      "median_rms_a": 0.00600587797816863,
+      "median_rms_b": 0.006020162757091991,
+      "median_rms_delta": 0.0,
+      "median_tv_delta": 0.0
+    },
+    "branchguard vs no_prefix": {
+      "pairs": 120,
+      "a_only": 3,
+      "b_only": 2,
+      "both_complete": 109,
+      "median_time_a": 4.84,
+      "median_time_b": 4.84,
+      "median_time_delta": 0.0,
+      "median_rms_a": 0.005994237213154622,
+      "median_rms_b": 0.005994237213154622,
+      "median_rms_delta": 0.0,
+      "median_tv_delta": 0.0
+    },
+    "branchguard vs spatial_slow": {
+      "pairs": 120,
+      "a_only": 3,
+      "b_only": 6,
+      "both_complete": 109,
+      "median_time_a": 4.84,
+      "median_time_b": 7.84,
+      "median_time_delta": -2.92,
+      "median_rms_a": 0.006017518743182638,
+      "median_rms_b": 0.007656580840587152,
+      "median_rms_delta": -0.0006602669600108066,
+      "median_tv_delta": -0.8292993470095098
+    },
+    "branchguard_slow vs spatial_slow": {
+      "pairs": 120,
+      "a_only": 1,
+      "b_only": 1,
+      "both_complete": 114,
+      "median_time_a": 7.6000000000000005,
+      "median_time_b": 7.8,
+      "median_time_delta": 0.0,
+      "median_rms_a": 0.006578036002412829,
+      "median_rms_b": 0.007844575073447024,
+      "median_rms_delta": -8.186764909924983e-06,
+      "median_tv_delta": -1.0059786825440824
+    }
+  },
+  "by_condition": {
+    "clean": {
+      "nearest": {
+        "total": 24,
+        "statuses": {
+          "off_track": 6,
+          "complete": 18
+        },
+        "success_rate": 0.75
+      },
+      "greedy_route": {
+        "total": 24,
+        "statuses": {
+          "complete": 18,
+          "off_track": 6
+        },
+        "success_rate": 0.75
+      },
+      "spatial": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "temporal": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_motion": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_prefix": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "spatial_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      }
+    },
+    "clutter": {
+      "nearest": {
+        "total": 24,
+        "statuses": {
+          "off_track": 10,
+          "complete": 14
+        },
+        "success_rate": 0.5833333333333334
+      },
+      "greedy_route": {
+        "total": 24,
+        "statuses": {
+          "off_track": 10,
+          "complete": 14
+        },
+        "success_rate": 0.5833333333333334
+      },
+      "spatial": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "temporal": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_motion": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_prefix": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "spatial_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      }
+    },
+    "gaps": {
+      "nearest": {
+        "total": 24,
+        "statuses": {
+          "off_track": 6,
+          "complete": 18
+        },
+        "success_rate": 0.75
+      },
+      "greedy_route": {
+        "total": 24,
+        "statuses": {
+          "complete": 22,
+          "off_track": 2
+        },
+        "success_rate": 0.9166666666666666
+      },
+      "spatial": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "temporal": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_motion": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_prefix": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "spatial_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      }
+    },
+    "flicker": {
+      "nearest": {
+        "total": 24,
+        "statuses": {
+          "complete": 18,
+          "off_track": 6
+        },
+        "success_rate": 0.75
+      },
+      "greedy_route": {
+        "total": 24,
+        "statuses": {
+          "complete": 17,
+          "off_track": 7
+        },
+        "success_rate": 0.7083333333333334
+      },
+      "spatial": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "temporal": {
+        "total": 24,
+        "statuses": {
+          "complete": 22,
+          "off_track": 2
+        },
+        "success_rate": 0.9166666666666666
+      },
+      "branchguard": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_motion": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "no_prefix": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "spatial_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      },
+      "branchguard_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 24
+        },
+        "success_rate": 1.0
+      }
+    },
+    "mixed": {
+      "nearest": {
+        "total": 24,
+        "statuses": {
+          "complete": 6,
+          "off_track": 18
+        },
+        "success_rate": 0.25
+      },
+      "greedy_route": {
+        "total": 24,
+        "statuses": {
+          "complete": 6,
+          "off_track": 18
+        },
+        "success_rate": 0.25
+      },
+      "spatial": {
+        "total": 24,
+        "statuses": {
+          "complete": 16,
+          "off_track": 8
+        },
+        "success_rate": 0.6666666666666666
+      },
+      "temporal": {
+        "total": 24,
+        "statuses": {
+          "complete": 12,
+          "off_track": 12
+        },
+        "success_rate": 0.5
+      },
+      "branchguard": {
+        "total": 24,
+        "statuses": {
+          "complete": 16,
+          "off_track": 8
+        },
+        "success_rate": 0.6666666666666666
+      },
+      "no_motion": {
+        "total": 24,
+        "statuses": {
+          "complete": 13,
+          "off_track": 11
+        },
+        "success_rate": 0.5416666666666666
+      },
+      "no_prefix": {
+        "total": 24,
+        "statuses": {
+          "complete": 15,
+          "off_track": 9
+        },
+        "success_rate": 0.625
+      },
+      "spatial_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 19,
+          "off_track": 5
+        },
+        "success_rate": 0.7916666666666666
+      },
+      "branchguard_slow": {
+        "total": 24,
+        "statuses": {
+          "complete": 19,
+          "off_track": 5
+        },
+        "success_rate": 0.7916666666666666
+      }
+    }
+  },
+  "flicker_pair": {
+    "pairs": 24,
+    "a_only": 0,
+    "b_only": 0,
+    "both_complete": 24,
+    "median_time_a": 4.84,
+    "median_time_b": 4.84,
+    "median_time_delta": -0.040000000000000036,
+    "median_rms_a": 0.005495871347985469,
+    "median_rms_b": 0.009322087921737051,
+    "median_rms_delta": -0.004230320870413512,
+    "median_tv_delta": -2.039300194941461
+  },
+  "runs_sha256": "a1e34281a5f007281dd56d65de96a6aefe7cd9e16016d3e17f3c050df1d99782"
+}

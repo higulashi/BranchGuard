@@ -1,0 +1,54 @@
+{
+  "scenarios": [
+    "fork_left",
+    "fork_right",
+    "three_way",
+    "crossing"
+  ],
+  "conditions": [
+    "clean",
+    "clutter",
+    "gaps",
+    "flicker",
+    "mixed"
+  ],
+  "seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206
+  ],
+  "methods": [
+    "nearest",
+    "greedy_route",
+    "spatial",
+    "temporal",
+    "branchguard",
+    "no_motion",
+    "spatial_slow",
+    "branchguard_slow",
+    "no_prefix"
+  ],
+  "dt": 0.04,
+  "jobs": 1080,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": {
+    "analyse_frame.py": "c8db270fbf237b6a5f48f8a46ed7b2cd2514a11c066be837055cde448ac10000",
+    "branchguard/__init__.py": "54f62b0d5f512b4ae9a576bf1830fb541f5a1f956712dc762d589e414b42dd15",
+    "branchguard/native.py": "52ecffc252a6763b729e9cd35b452debaff3e9272107905da1f0791f7d6ce8bb",
+    "branchguard/simulator.py": "675d34c7776d2758b98ee7391ac0832d7aa3664b7313cde3b797d71148710686",
+    "core/branchguard.c": "24bbab75431d56b07ce042d4f0651bbbcaa92462c961d65703fd8db155084f11",
+    "core/branchguard.h": "24cdc3b59448a4f78f962006817bc7cd2467d7f39127f4d3e20ad370fb075bee",
+    "make_demo.py": "79fa2546c931366bb6e2dc9657b2d6658ff4c7926cee84ba1c9239115f9a9875",
+    "make_report.py": "c027aa5d99c0c9c6d1503a6950688cb4894c10db8b7bd66e6ea701bd23e2cc5f",
+    "measure_core.py": "deceac672b378937623ea14dca1097dbb707bd5492857b76727359eacd25eac9",
+    "run_benchmark.py": "a33febaf3dcc6cfbe2c6904bd12b7a2e73cbf79bb438314701140c781a273931",
+    "tests/test_core.py": "961bacd905522a7a3afbeaea7fc5f8f239393e8b4f962d1f9125102c7ecfdeb5"
+  },
+  "sensor_input": "188x120 uint8 image, route -1/0/+1, noisy encoder distance and gyro yaw increment",
+  "success": "reach world x >= 4.4 m on requested route; stops are failures",
+  "note": "All conditions and failures retained. This is a synthetic black-guide-line testbed."
+}
